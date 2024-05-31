@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../res/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/news.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Новости</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="top">
+            <div class="logo">
+                <img src="../res/rus.svg" alt="logo">
+            </div>
+        </div>
+        <ul>
+            <li>
+                <a href="../index.html">
+                    <i class='bx bx-home-alt-2'></i>
+                    <span class="nav-item">Главная</span>
+                </a>
+            </li>
+            <li>
+                <a href="../pages/News.html">
+                    <i class='bx bx-news'></i>
+                    <span class="nav-item">Новости</span>
+                </a>
+            </li>
+            <li>
+                <a href="../pages/ExchangeRate.html">
+                    <i class='bx bx-coin'></i>
+                    <span class="nav-item">Курс валют</span>
+                </a>
+            </li>
+            <li>
+                <a href="../pages/Contacts.html">
+                    <i class='bx bx-phone'></i>
+                    <span class="nav-item">Контактные <br>данные</span>
+                </a>
+            </li>
+            <li>
+                <a href="../pages/Multimedia.html">
+                    <i class='bx bx-slideshow'></i>
+                    <span class="nav-item">Видео</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section class="news_block">
+            <div class="title_block">
+                <h1>Новости</h1>
+            </div>
+            <div class="area_posts">
+                <div class="post_item" onclick="openNewsCard(1)">
+                    <div class="date_title">
+                        <i class='bx bx-calendar'></i>
+                        <p>01.05.2024</p>
+                    </div>
+                    <h3 class="high_title">Уведомление об изменении почтового индекса Компании</h3>
+                    <p class="prew_text">
+                        Уважаемые клиенты, контрагенты и партнеры!
+                        <br>
+                        Акционерное общество «Инвестиционная компания «Ленмонтажстрой» уведомляет Вас о том, что 5 мая 2024 года...
+                    </p>
+                    <div class="btn_full">
+                        <a class="read_post">Читать далее <i class='bx bx-right-arrow-alt'></i></a>
+                    </div>
+                </div>
+                <div class="post_item" onclick="openNewsCard(2)">
+                    <div class="date_title">
+                        <i class='bx bx-calendar'></i>
+                        <p>27.02.2024</p>
+                    </div>
+                    <h3 class="high_title">Обновление информации о финансовых инструментах</h3>
+                    <p class="prew_text">
+                        Уважаемые клиенты! Доводим до Вашего сведения, что на сайте Компании обновлен информационный документ о финансовых инструментах.
+                        <br>
+                        Напоминаем Вам, ...
+                    </p>
+                    <div class="btn_full">
+                        <a class="read_post">Читать далее <i class='bx bx-right-arrow-alt'></i></a>
+                    </div>
+                </div>
+                <div class="post_item" onclick="openNewsCard(3)">
+                    <div class="date_title">
+                        <i class='bx bx-calendar'></i>
+                        <p>06.02.2024</p>
+                    </div>
+                    <h3 class="high_title">Внимание! Обнаружена попытка мошенничества!</h3>
+                    <p class="prew_text">
+                        Уважаемые клиенты, в сети интернет по адресам https://lmsic.capital , https://lmsic.pro , https://lmsic.cc , https://lmsic.net выявлены поддельные сайты,...
+                    </p>
+                    <div class="btn_full">
+                        <a class="read_post">Читать далее <i class='bx bx-right-arrow-alt'></i></a>
+                    </div>
+                </div>
+                <div class="post_item" onclick="openNewsCard(4)">
+                    <div class="date_title">
+                        <i class='bx bx-calendar'></i>
+                        <p>27.12.2023</p>
+                    </div>
+                    <h3 class="high_title">Режим работы в период праздников компании</h3>
+                    <p class="prew_text">
+                        Уважаемые Клиенты! Поздравляем Вас с наступающими Новым Годом и Рождеством и информируем о режиме работы Компании, а также о проведении торгов в период...
+                    </p>
+                    <div class="btn_full">
+                        <a class="read_post">Читать далее <i class='bx bx-right-arrow-alt'></i></a>
+                    </div>
+                </div>
+                <div class="post_item" onclick="openNewsCard(5)">
+                    <div class="date_title">
+                        <i class='bx bx-calendar'></i>
+                        <p>01.12.2023</p>
+                    </div>
+                    <h3 class="high_title">Новая редакция Регламента оказания брокерских услуг</h3>
+                    <p class="prew_text">
+                        Уважаемые клиенты! Доводим до Вашего сведения, что дата в прошлом посте была ошибочной! С 15.12.2023 вводится в ...
+                    </p>
+                    <div class="btn_full">
+                        <a class="read_post">Читать далее <i class='bx bx-right-arrow-alt'></i></a>
+                    </div>
+                </div>
+                <div class="post_item" onclick="openNewsCard(6)">
+                    <div class="date_title">
+                        <i class='bx bx-calendar'></i>
+                        <p>01.12.2023</p>
+                    </div>
+                    <h3 class="high_title">Новая редакция Регламента оказания брокерских услуг</h3>
+                    <p class="prew_text">
+                        Уважаемые клиенты! Доводим до Вашего сведения, что с 8.12.2023 вводится в действие новая редакция Регламента оказания брокерских услуг. Ознакомиться ...
+                    </p>
+                    <div class="btn_full">
+                        <a class="read_post">Читать далее <i class='bx bx-right-arrow-alt'></i></a>
+                    </div>
+                </div>
+                <div class="post_item" onclick="openNewsCard(7)">
+                    <div class="date_title">
+                        <i class='bx bx-calendar'></i>
+                        <p>01.12.2023</p>
+                    </div>
+                    <h3 class="high_title">Информация об использовании специальных брокерских счетов</h3>
+                    <p class="prew_text">
+                        Уважаемые клиенты!
+                        <br>
+                        Информируем вас, что денежные средства клиента, передаваемые АО «Инвестиционная компания ЛМС» по договору на брокерское обслуживание,...
+                    </p>
+                    <div class="btn_full">
+                        <a class="read_post">Читать далее <i class='bx bx-right-arrow-alt'></i></a>
+                    </div>
+                </div>
+                <div class="post_item" onclick="openNewsCard(8)">
+                    <div class="date_title">
+                        <i class='bx bx-calendar'></i>
+                        <p>01.12.2023</p>
+                    </div>
+                    <h3 class="high_title">Информация для клиентов — квалифицированных инвесторов</h3>
+                    <p class="prew_text">
+                        Уважаемые клиенты, включенные в реестр лиц, признанных квалифицированными инвесторами АО «Инвестиционная компания ЛМС»!
+                        <br>
+                        Во исполнение требований ...
+                    </p>
+                    <div class="btn_full">
+                        <a class="read_post">Читать далее <i class='bx bx-right-arrow-alt'></i></a>
+                    </div>
+                </div>
+                <div class="post_item" onclick="openNewsCard(9)">
+                    <div class="date_title">
+                        <i class='bx bx-calendar'></i>
+                        <p>16.11.2023</p>
+                    </div>
+                    <h3 class="high_title">Новая редакция Тарифов на брокерские и связанные с ними услуги</h3>
+                    <p class="prew_text">
+                        Уважаемые клиенты! Доводим до Вашего сведения, что с 01.12.2023 вводится в действие новая редакция Тарифов на брокерские и связанные с ними ...
+                    </p>
+                    <div class="btn_full">
+                        <a class="read_post">Читать далее <i class='bx bx-right-arrow-alt'></i></a>
+                    </div>
+                </div>
+                <div class="post_item" onclick="openNewsCard(10)">
+                    <div class="date_title">
+                        <i class='bx bx-calendar'></i>
+                        <p>23.10.2023</p>
+                    </div>
+                    <h3 class="high_title">Новая редакция Условий осуществления депозитарной деятельности (клиентский регламент)</h3>
+                    <p class="prew_text">
+                        Уважаемые клиенты! Доводим до Вашего сведения, что с 08.11.2023 вводится в действие новая редакция Условий осуществления депозитарной деятельности (клиентский...	
+                    </p>
+                    <div class="btn_full">
+                        <a class="read_post">Читать далее <i class='bx bx-right-arrow-alt'></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="news_card" class="news_card">
+            <div class="date_title">
+                <i class='bx bx-calendar'></i>
+                <p id="news_date"></p>
+            </div>
+            <h3 id="news_title" class="high_title"></h3>
+            <p id="news_text" class="full_text"></p>
+            <div class="btn_exit">
+                <a href="javascript:void(0);" onclick="closeNewsCard();" class="exit_button">Выход</a>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- подвал у всех одинаковый -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>О компании</h3>
+                <p>АО «Инвестиционная компания «Ленмонтажстрой» — одна из старейших компаний в России, работающая на рынке ценных бумаг более 26 лет.</p>
+                <img src="../res/rus-black.svg" alt="logo">
+            </div>
+            <div class="footer-section links">
+                <h3>Полезные ссылки</h3>
+                <ul>
+                    <li><a href="../pages/News.html">Новости</a></li>
+                    <li><a href="../pages/ExchangeRate.html">Курс валют</a></li>
+                    <li><a href="../pages/Contacts.html">Контакты</a></li>
+                    <li><a href="../pages/Multimedia.html">Видео</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Контакты</h3>
+                <p class="contact_item">
+                    <i class='bx bx-map'></i>
+                    191181, Санкт-Петербург,<br>наб. реки Мойки, дом 11,<br> лит. А, пом.21-Н
+                </p>
+
+                <a href="tel:+78123291999" class="contact_item">
+                    <i class='bx bx-phone' ></i>
+                    +7 (812) 329-19-99
+                </a>
+                <a href="tel:+78123291998" class="contact_item">
+                    <i class='bx bx-phone' ></i>
+                    +7 (812) 329-19-98
+                </a>
+                <a href="tel:+78001015339" class="contact_item">
+                    <i class='bx bx-phone' ></i>
+                    +7 (800) 101-53-39
+                </a>
+
+                <a href="mailto:lms@lmsic.com" class="contact_item">
+                    <i class='bx bx-envelope' ></i>
+                    lms@lmsic.com
+                </a>
+                <a href="https://t.me/lmsstock" class="contact_item">
+                    <i class='bx bxl-telegram' ></i>
+                    @lmsstock
+                </a>
+
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 ЛМС. Все права защищены.
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/news.js"></script>
+</body>
+</html>
