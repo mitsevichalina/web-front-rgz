@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../res/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/exchrate.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Курс валют</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="top">
+            <div class="logo">
+                <img src="../res/rus.svg" alt="logo">
+            </div>
+        </div>
+        <ul>
+            <li>
+                <a href="../index.html">
+                    <i class='bx bx-home-alt-2'></i>
+                    <span class="nav-item">Главная</span>
+                </a>
+            </li>
+            <li>
+                <a href="../pages/News.html">
+                    <i class='bx bx-news'></i>
+                    <span class="nav-item">Новости</span>
+                </a>
+            </li>
+            <li>
+                <a href="../pages/ExchangeRate.html">
+                    <i class='bx bx-coin'></i>
+                    <span class="nav-item">Курс валют</span>
+                </a>
+            </li>
+            <li>
+                <a href="../pages/Contacts.html">
+                    <i class='bx bx-phone'></i>
+                    <span class="nav-item">Контактные <br>данные</span>
+                </a>
+            </li>
+            <li>
+                <a href="../pages/Multimedia.html">
+                    <i class='bx bx-slideshow'></i>
+                    <span class="nav-item">Видео</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    
+    <main>
+        <!-- калькулятор валют -->
+        <section class="calc_toolkit">
+            <div class="grid_calc">
+                <div class="title_block">
+                    <h1>Калькулятор валют</h1>
+                </div>
+                
+                <div class="calc_side">
+                    <p class="title_side">У меня есть</p>
+                    <div class="calc_switcher" data-id="from">
+                        <div class="calc_switcher_item active">RUB</div>
+                        <div class="calc_switcher_item">UAH</div>
+                    </div>
+                    <div class="calc_input_box" data-id="from">
+                        <input type="text" id="fromRate" value="100" maxlength="10" data-reverse="false">
+                        <div class="calc_input_box_rate">1 RUB = 23 UAH</div>
+                    </div>
+                </div> 
+    
+                <div class="calc_reverse"></div>
+    
+                <div class="calc_side">
+                    <p class="title_side">Хочу приобрести</p>
+                    <div class="calc_switcher" data-id="to">
+                        <div class="calc_switcher_item">RUB</div>
+                        <div class="calc_switcher_item active">UAH</div>
+                    </div>
+                    <div class="calc_input_box" data-id="to">
+                        <input type="text" id="toRate" maxlength="10" data-reverse="true">
+                        <div class="calc_input_box_rate">1 UAH = 0.23 RUB</div>
+                    </div>
+                </div> 
+            </div>
+
+            
+        </section>
+
+    </main>
+
+    <!-- подвал у всех одинаковый -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>О компании</h3>
+                <p>АО «Инвестиционная компания «Ленмонтажстрой» — одна из старейших компаний в России, работающая на рынке ценных бумаг более 26 лет.</p>
+                <img src="../res/rus-black.svg" alt="logo">
+            </div>
+            <div class="footer-section links">
+                <h3>Полезные ссылки</h3>
+                <ul>
+                    <li><a href="../pages/News.html">Новости</a></li>
+                    <li><a href="../pages/ExchangeRate.html">Курс валют</a></li>
+                    <li><a href="../pages/Contacts.html">Контакты</a></li>
+                    <li><a href="../pages/Multimedia.html">Видео</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Контакты</h3>
+                <p class="contact_item">
+                    <i class='bx bx-map'></i>
+                    191181, Санкт-Петербург,<br>наб. реки Мойки, дом 11,<br> лит. А, пом.21-Н
+                </p>
+
+                <a href="tel:+78123291999" class="contact_item">
+                    <i class='bx bx-phone' ></i>
+                    +7 (812) 329-19-99
+                </a>
+                <a href="tel:+78123291998" class="contact_item">
+                    <i class='bx bx-phone' ></i>
+                    +7 (812) 329-19-98
+                </a>
+                <a href="tel:+78001015339" class="contact_item">
+                    <i class='bx bx-phone' ></i>
+                    +7 (800) 101-53-39
+                </a>
+
+                <a href="mailto:lms@lmsic.com" class="contact_item">
+                    <i class='bx bx-envelope' ></i>
+                    lms@lmsic.com
+                </a>
+                <a href="https://t.me/lmsstock" class="contact_item">
+                    <i class='bx bxl-telegram' ></i>
+                    @lmsstock
+                </a>
+
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 ЛМС. Все права защищены.
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/rate.js"></script>
+</body>
+</html>
