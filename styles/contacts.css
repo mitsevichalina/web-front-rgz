@@ -1,0 +1,50 @@
+main .contacts_block {
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.information {
+    position: absolute;
+    left: 320px;
+    background-color: #364454;
+}
+
+.info_text {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 40px 50px 40px 50px;
+}
+
+.info_text .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    text-decoration: none;
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.699);
+    transition: all 0.2s ease;
+}
+
+.info_text .item i {
+    padding-right: 20px;
+}
+
+.info_text .item:hover {
+    color: #a8a8a8;
+}
+
+.strong {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.info_text span {
+    color: #fff;
+    margin-bottom: 5px;    
+}

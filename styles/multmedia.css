@@ -1,0 +1,36 @@
+main .video_block {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.video_block .grid_video {
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 0.6fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+
+    margin-left: 90px;
+}
+
+.grid_video .title_block {
+    grid-area: 1 / 1 / 2 / 7;
+}
+
+.title_block .title {
+    font-size: 34px;
+    width: 460px;
+    padding-left: 4px;
+    border-bottom: 3px solid red;
+}
+
+.grid_video .video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
